@@ -1,0 +1,10 @@
+// Source - https://stackoverflow.com/a
+// Posted by jvcmtr, modified by community. See post 'Timeline' for change history
+// Retrieved 2026-01-10, License - CC BY-SA 4.0
+{
+  "File-Scoped Namespace": {
+    "prefix": ["namespace"],
+    "body": "namespace ${RELATIVE_FILEPATH/^([^\\\\\\/]+)[\\\\\\/]|([^\\\\\\/]+)[\\\\\\/]|(?:[^\\\\\\/]+\\.[^\\\\\\/]+)/$1${2:+.}$2/g};",
+    "description": "Inserts file-scoped namespace based on folder."
+  }
+}

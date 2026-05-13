@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bep477bi1huxn"]
+
+[ext_resource type="Script" uid="uid://bdbgmkf18y2ir" path="res://Controls/Buttons/IconButton.cs" id="1_41rhs"]
+[ext_resource type="FontFile" uid="uid://cwnvgf0xcpeta" path="res://Assets/Fonts/FontAwesome/Font Awesome 7 Free-Solid-900.otf" id="2_8jnjx"]
+
+[sub_resource type="Theme" id="Theme_41rhs"]
+default_font_size = 64
+
+[node name="IconButton" type="Button" unique_id=500029618]
+custom_minimum_size = Vector2(64, 64)
+theme = SubResource("Theme_41rhs")
+flat = true
+script = ExtResource("1_41rhs")
+FontAwesomeRef = ExtResource("2_8jnjx")

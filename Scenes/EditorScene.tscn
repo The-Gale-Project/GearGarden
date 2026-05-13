@@ -1,0 +1,134 @@
+[gd_scene format=3 uid="uid://b6vnd5wd1puuu"]
+
+[ext_resource type="PackedScene" uid="uid://bep477bi1huxn" path="res://Controls/Buttons/IconButton.tscn" id="1_2uumu"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w62uy"]
+bg_color = Color(0.09411765, 0.09411765, 0.12941177, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2uumu"]
+bg_color = Color(0.11764706, 0.11764706, 0.16470589, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wo6m3"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fo8lk"]
+bg_color = Color(0.13725491, 0.13725491, 0.19607843, 1)
+
+[node name="EditorScene" type="Control" unique_id=1280673727]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MainPanel" type="PanelContainer" parent="." unique_id=638131589]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_w62uy")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MainPanel" unique_id=2023851725]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MainPanel/HBoxContainer" unique_id=219713935]
+layout_mode = 2
+size_flags_horizontal = 0
+follow_focus = true
+horizontal_scroll_mode = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainPanel/HBoxContainer/ScrollContainer" unique_id=1992149388]
+layout_mode = 2
+
+[node name="BtnPatches" parent="MainPanel/HBoxContainer/ScrollContainer/VBoxContainer" unique_id=500029618 instance=ExtResource("1_2uumu")]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+Unicode = "f462"
+
+[node name="BtnLists" parent="MainPanel/HBoxContainer/ScrollContainer/VBoxContainer" unique_id=1065640383 instance=ExtResource("1_2uumu")]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+Unicode = "f03a"
+
+[node name="BtnTextStrings" parent="MainPanel/HBoxContainer/ScrollContainer/VBoxContainer" unique_id=1981928144 instance=ExtResource("1_2uumu")]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+Unicode = "f4ad"
+
+[node name="BtnScriptScenes" parent="MainPanel/HBoxContainer/ScrollContainer/VBoxContainer" unique_id=2083821180 instance=ExtResource("1_2uumu")]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+Unicode = "f630"
+
+[node name="BtnMonsters" parent="MainPanel/HBoxContainer/ScrollContainer/VBoxContainer" unique_id=986944573 instance=ExtResource("1_2uumu")]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+Unicode = "f6d5"
+
+[node name="BtnItems" parent="MainPanel/HBoxContainer/ScrollContainer/VBoxContainer" unique_id=1836315508 instance=ExtResource("1_2uumu")]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+Unicode = "f486"
+
+[node name="BtnMoves" parent="MainPanel/HBoxContainer/ScrollContainer/VBoxContainer" unique_id=770372458 instance=ExtResource("1_2uumu")]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+Unicode = "e4dc"
+
+[node name="BtnMapBack" parent="MainPanel/HBoxContainer/ScrollContainer/VBoxContainer" unique_id=1598565522 instance=ExtResource("1_2uumu")]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+Unicode = "f279"
+
+[node name="BtnDungeons" parent="MainPanel/HBoxContainer/ScrollContainer/VBoxContainer" unique_id=616055 instance=ExtResource("1_2uumu")]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+Unicode = "f6d9"
+
+[node name="BtnFixedRooms" parent="MainPanel/HBoxContainer/ScrollContainer/VBoxContainer" unique_id=2131208728 instance=ExtResource("1_2uumu")]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+Unicode = "f08d"
+
+[node name="BtnDungeonGraphics" parent="MainPanel/HBoxContainer/ScrollContainer/VBoxContainer" unique_id=787505888 instance=ExtResource("1_2uumu")]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+Unicode = "f43c"
+
+[node name="BtnMiscGraphics" parent="MainPanel/HBoxContainer/ScrollContainer/VBoxContainer" unique_id=787850155 instance=ExtResource("1_2uumu")]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+Unicode = "f302"
+
+[node name="BtnSymbols" parent="MainPanel/HBoxContainer/ScrollContainer/VBoxContainer" unique_id=467077637 instance=ExtResource("1_2uumu")]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+Unicode = "24"
+
+[node name="BtnMusic" parent="MainPanel/HBoxContainer/ScrollContainer/VBoxContainer" unique_id=1952360380 instance=ExtResource("1_2uumu")]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+Unicode = "f001"
+
+[node name="HSplitContainer" type="HSplitContainer" parent="MainPanel/HBoxContainer" unique_id=786349605]
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="LeftEditorPanel" type="PanelContainer" parent="MainPanel/HBoxContainer/HSplitContainer" unique_id=1061362314]
+clip_contents = true
+custom_minimum_size = Vector2(256, 0)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_2uumu")
+
+[node name="Tree" type="Tree" parent="MainPanel/HBoxContainer/HSplitContainer/LeftEditorPanel" unique_id=997429846]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_wo6m3")
+
+[node name="RightEditorPanel" type="PanelContainer" parent="MainPanel/HBoxContainer/HSplitContainer" unique_id=1552914219]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_fo8lk")
