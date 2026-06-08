@@ -11,11 +11,12 @@ config_version=5
 [application]
 
 config/name="GearGarden"
+run/main_scene="uid://bhlu3w2vsjew"
 config/use_custom_user_dir=true
 config/custom_user_dir_name="GearGarden"
 config/features=PackedStringArray("4.6", "C#", "GL Compatibility")
 run/low_processor_mode=true
-config/icon="res://icon.svg"
+config/icon="uid://byq05efb2wts6"
 
 [display]
 

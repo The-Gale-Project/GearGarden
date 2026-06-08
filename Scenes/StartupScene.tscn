@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bhlu3w2vsjew"]
 
-[ext_resource type="Texture2D" uid="uid://ddm0qgyb8mxg8" path="res://Assets/Images/logo.png" id="1_ofa2m"]
+[ext_resource type="Texture2D" uid="uid://byq05efb2wts6" path="res://icon.png" id="1_ofa2m"]
 [ext_resource type="LabelSettings" uid="uid://c3ci3lqd431dg" path="res://Theme/Default/TitleLabelSettings.tres" id="2_gmkih"]
 
 [node name="StartupScene" type="Control" unique_id=1885466753]
@@ -24,9 +24,9 @@ custom_minimum_size = Vector2(250, 0)
 layout_mode = 2
 
 [node name="Logo" type="TextureRect" parent="CenterContainer/VBoxContainer" unique_id=800098393]
-custom_minimum_size = Vector2(128, 128)
 layout_mode = 2
 texture = ExtResource("1_ofa2m")
+expand_mode = 4
 stretch_mode = 5
 
 [node name="Label" type="Label" parent="CenterContainer/VBoxContainer" unique_id=1349074733]
